@@ -157,30 +157,20 @@ a>img {
 }
 
 .set {
-    padding: 0px 0px 23px 30px;
+    padding: 0px 0px 16px 0px;
 
 }
 
 
-/* before  */
-.menu>li {
-    list-style: none;
-    padding-bottom: 10px;
-}
-
-.menu>li>a {
+#fot>a{
+    position: relative;
     text-decoration: none;
     color: white;
-    /* font-family: 'Poppins', sans-serif; */
+    display: inline-block;
+    padding: 6px 0px;
     font-size: 0.90rem;
-    position: relative;
 }
-
-.menu>li>a:hover {
-    color: white;
-}
-
-.menu>li>a::after {
+#fot>a::before {
     content: "";
     position: absolute;
     left: 0;
@@ -190,10 +180,30 @@ a>img {
     transition: .6s;
 }
 
-.menu>li>a:hover::after {
+#fot>a:hover::before {
     right: 0;
 }
+#fott>a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 6px 0px;
+    font-size: 0.90rem;
+}
+#fott>a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 100%;
+    border-bottom: 1px solid white;
+    transition: .6s;
+}
 
+#fott>a:hover::before {
+    right: 0;
+}
 
 
 /* end of footer copyright section */
